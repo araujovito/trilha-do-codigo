@@ -1,0 +1,171 @@
+# Glossário
+
+Termos técnicos usados nas fichas de `projetos/`, em ordem alfabética. Cada termo tem uma explicação curta e, quando ajuda, uma analogia do dia a dia.
+
+- **ADR** — Registro escrito de uma decisão de projeto ("decidimos X porque Y"). Como a ata de uma reunião.
+- **AES-256-GCM** — Um jeito de trancar um dado com chave secreta e ainda detectar se alguém mexeu nele. Como um cadeado com lacre.
+- **Agendamento periódico** — Mandar o programa executar uma tarefa sozinho de tempos em tempos. Como o despertador do celular.
+- **API** — Conjunto de "portas" que um programa abre para outros programas conversarem com ele. Como o cardápio de um restaurante: você pede pelo nome, não entra na cozinha.
+- **argparse** — Ferramenta do Python para o programa entender o que você digita no terminal (por exemplo, `programa coletar mexico`).
+- **Array (lista)** — Sequência ordenada de valores guardados juntos. Como uma lista de compras.
+- **as const** — Marca do TypeScript que diz "estes valores não mudam", permitindo derivar tipos deles.
+- **assíncrono (async)** — Código que começa uma tarefa demorada e continua outras coisas sem ficar parado esperando. Como pôr a roupa na máquina e ir lavar a louça.
+- **AST (ast)** — Módulo do Python que lê o texto de um código como dados, sem executá-lo.
+- **Astro** — Ferramenta que gera um site estático (páginas prontas) a partir de arquivos de código.
+- **atribuição (de canais)** — Dividir o crédito de uma venda entre os caminhos (anúncio, e-mail, busca) que levaram o cliente até ela.
+- **Atualização otimista** — Mostrar o resultado na tela antes de o servidor confirmar e desfazer se der erro. Como marcar a presença antes de o professor conferir.
+- **backend** — A parte do sistema que roda no servidor, longe dos olhos do usuário.
+- **backlog** — Lista do que ainda precisa ser feito no projeto.
+- **Bash** — Linguagem do terminal Linux; permite guardar comandos em um arquivo (script).
+- **bean** — No Spring, um objeto que o próprio framework cria e entrega a quem precisar.
+- **build** — Etapa que transforma o código-fonte no produto final (site pronto, programa executável).
+- **cache** — Cópia guardada para não precisar buscar de novo. Como deixar o açúcar na mesa em vez de ir ao armário toda vez.
+- **Caddy** — Servidor web que cuida do HTTPS (conexão segura) em produção.
+- **CI (integração contínua)** — Robô que roda os testes automaticamente a cada mudança enviada ao repositório.
+- **classe** — Molde que descreve um tipo de objeto, com seus dados e ações. Como a forma de um bolo: dela saem vários bolos iguais.
+- **CLI (linha de comando)** — Programa que se usa digitando comandos no terminal, sem janelas.
+- **cliente** — O lado que pede (navegador, app); o lado que responde é o servidor.
+- **Cloudflare Workers / Wrangler** — Serviço que hospeda sites e pequenos programas na internet; Wrangler é a ferramenta que envia o projeto para lá.
+- **commit** — Foto salva do estado do projeto no Git, com uma mensagem explicando a mudança.
+- **componente** — Pedaço reaproveitável de tela (um botão, um painel).
+- **componente de cliente / de servidor** — No Next.js/React, componente que roda no navegador (`"use client"`) ou no servidor antes de a página chegar.
+- **conciliação / conciliador** — Conferir se dois registros do mesmo dinheiro batem. Como fechar o caixa no fim do dia.
+- **constante** — Valor que não muda durante a execução.
+- **consumer group (grupo de consumidores)** — Vários processos que dividem entre si as mensagens de uma fila, sem repetir. Como caixas de supermercado atendendo a mesma fila.
+- **contêiner** — Caixa isolada que leva um programa e tudo de que ele precisa para rodar. Como uma marmita pronta.
+- **CORS** — Regra do navegador sobre quais sites podem chamar uma API.
+- **cp1252 / Windows-1252** — Jeito antigo do Windows de guardar letras acentuadas em arquivos.
+- **CSV** — Arquivo de texto com tabela, valores separados por vírgula ou ponto e vírgula.
+- **dashboard (painel)** — Tela que mostra números e gráficos de um sistema.
+- **dataclass** — Forma curta de criar uma classe que só guarda campos de dados.
+- **dbt** — Ferramenta que organiza consultas SQL em etapas (modelos) e as testa.
+- **Decaimento exponencial** — Peso que cai pela metade a cada intervalo fixo de tempo. Como o calor de um café esquecendo na mesa.
+- **decodificação (encoding)** — Converter bytes em letras. UTF-8 e cp1252 são dois "códigos" diferentes; usar o errado deforma os acentos.
+- **defaultdict** — Dicionário do Python que cria sozinho a lista vazia na primeira vez que uma chave é usada.
+- **dependência** — Biblioteca de terceiros de que o projeto precisa para funcionar.
+- **deploy** — Colocar o sistema no ar, em um servidor onde os usuários possam usá-lo.
+- **desvio amostral** — Medida de quanto os valores se afastam da média (dividindo por n-1).
+- **dicionário** — Estrutura que guarda pares chave → valor. Como uma agenda: você busca pelo nome e acha o telefone.
+- **Docker / Docker Compose** — Ferramentas que criam e ligam contêineres; Compose sobe vários de uma vez a partir de um arquivo.
+- **docstring** — Texto de explicação escrito dentro do próprio código, no começo de um arquivo ou função.
+- **DOM** — A árvore de elementos de uma página web, que o JavaScript pode ler e alterar.
+- **DuckDB** — Banco de dados leve que roda dentro do próprio programa, bom para analisar tabelas.
+- **emulador / mGBA** — Programa que imita um videogame (Game Boy Advance) no computador.
+- **endpoint** — Um endereço específico de uma API que faz uma tarefa (por exemplo, `/health`).
+- **enum** — Lista fechada de opções válidas, como os estados TEXTO_EXTRAIDO ou PRECISA_OCR.
+- **ERP** — Sistema de gestão da empresa (pedidos, estoque, financeiro).
+- **escrita atômica** — Gravar um arquivo de um jeito que ele nunca fica pela metade: escreve em um arquivo temporário e só depois troca o nome. Como lavrar o contrato só quando está completo.
+- **estado final** — Situação da qual um registro não sai mais (por exemplo, transferência liquidada).
+- **exceção** — Aviso de erro que interrompe o fluxo normal; o código pode capturá-lo e decidir o que fazer.
+- **expressão regular (regex)** — Padrão para achar trechos de texto (como números ou palavras). Como um "localizar" com superpoderes.
+- **FastAPI** — Ferramenta Python para montar APIs e sites.
+- **Fastify** — Equivalente do FastAPI no mundo Node/TypeScript.
+- **fila** — Lista de tarefas ou mensagens esperando sua vez de serem processadas.
+- **finally** — Bloco que roda sempre ao fim, dando certo ou errado; serve para limpar o que foi aberto.
+- **Flyway** — Ferramenta que aplica as migrations do banco na ordem certa.
+- **FOR UPDATE** — Pedido ao banco: "trave esta linha, ninguém mexe enquanto eu termino". Como reservar um assento no cinema.
+- **framework** — Conjunto de ferramentas e regras prontas que servem de esqueleto para o programa (Spring, Django, Next.js).
+- **frontend** — A parte que o usuário vê e usa no navegador.
+- **frontmatter** — Trecho de código no topo de um arquivo .astro (entre `---`) que roda no build, não no navegador.
+- **função** — Bloco de código com nome que recebe valores e devolve um resultado. Como uma receita.
+- **função pura** — Função que só calcula a partir do que recebe, sem alterar nada fora dela.
+- **Git** — Sistema que guarda o histórico de um projeto e permite voltar no tempo.
+- **GitHub Actions** — Serviço do GitHub que roda tarefas automáticas (como os testes) a cada mudança.
+- **Go** — Linguagem de programação criada para servidores rápidos e concorrentes.
+- **goroutine** — Tarefa leve do Go que roda ao mesmo tempo que outras.
+- **guard clause** — Condição no início da função que sai logo se algo está errado, evitando aninhar ifs.
+- **hash (SHA-256)** — "Impressão digital" de um conteúdo: o mesmo conteúdo sempre dá o mesmo código; qualquer mudança dá outro.
+- **HMAC** — Hash combinado com uma chave secreta; prova que a mensagem veio de quem tem a chave e não foi alterada.
+- **HTML / CSS** — HTML define a estrutura de uma página; CSS define a aparência.
+- **HTTP / HTTPS** — Protocolo de conversa entre navegador e servidor; o S indica conexão protegida.
+- **idempotência** — Fazer a mesma operação duas vezes dá o mesmo resultado que fazer uma. Como apertar o botão do elevador várias vezes.
+- **IIFE** — Função JavaScript que se executa no instante em que é escrita, para isolar suas variáveis.
+- **import tardio** — Importar um módulo só no momento em que ele é necessário.
+- **injeção de dependência** — Em vez de a classe criar o que precisa, o framework entrega pronto.
+- **interface (TypeScript)** — Descrição da forma que um objeto deve ter (quais campos e de que tipo).
+- **intervalo de Wilson** — Fórmula estatística que dá uma faixa de confiança para uma proporção.
+- **isolamento READ COMMITTED / SERIALIZABLE** — Níveis de regra sobre o que uma transação enxerga das outras; SERIALIZABLE é mais rígido.
+- **Java / JVM** — Java é uma linguagem; JVM é o programa que a executa.
+- **JavaScript** — Linguagem da web; roda no navegador e, com Node.js, no servidor.
+- **JSON** — Formato de texto para guardar dados com nomes e valores. Como um formulário preenchido.
+- **JSON Lines** — Arquivo com um JSON por linha, bom para acrescentar registros.
+- **k6** — Ferramenta de teste de carga: simula muitos usuários ao mesmo tempo.
+- **laço (loop)** — Repetir um trecho de código várias vezes (`for`, `while`).
+- **lambda** — Função pequena, sem nome, escrita na própria linha.
+- **linter / lint** — Programa que lê o código e aponta erros de estilo ou descuidos.
+- **localStorage** — Pequeno armazenamento do navegador que guarda dados do site no computador do usuário.
+- **lookbehind** — Em regex, olhar o que vem antes do ponto atual sem consumi-lo.
+- **lru_cache (memorização)** — Guardar o resultado de uma função para não recalcular quando ela receber os mesmos valores.
+- **manifesto** — Arquivo-registro do que foi baixado ou processado (origem, hash, horário).
+- **Markdown** — Texto simples com marcações leves (`#`, `-`) para formatar documentos.
+- **middleware** — Camada que examina cada pedido antes de a API respondê-lo (por exemplo, recusar corpo grande).
+- **migration (migração)** — Arquivo SQL que muda a estrutura do banco; guardadas em ordem, contam a história do banco.
+- **modelo dimensional** — Jeito de organizar tabelas de análise em fatos (o que aconteceu) e dimensões (quem, quando, onde).
+- **módulo** — Arquivo de código que pode ser importado por outros.
+- **multiconjunto** — Coleção que aceita valores repetidos e conta quantas vezes cada um aparece.
+- **Next.js / vinext** — Framework para sites feitos com React.
+- **NFKD (normalização Unicode)** — Separar a letra do acento (é → e + ´) para poder descartar o acento ao comparar textos.
+- **Node.js** — Programa que executa JavaScript fora do navegador.
+- **OCR** — Reconhecer letras em uma imagem de texto.
+- **ON CONFLICT DO NOTHING / INSERT OR IGNORE** — Comandos SQL que ignoram a gravação se o registro já existe.
+- **OpenTelemetry / Jaeger** — Padrão e tela para rastrear o caminho de um pedido por dentro do sistema.
+- **ORM** — Camada que deixa mexer no banco usando objetos do código em vez de escrever SQL à mão (Django, Drizzle).
+- **outbox** — Tabela onde se anota "falta enviar esta mensagem", gravada na mesma transação do pedido, para nada se perder.
+- **Parquet** — Formato de arquivo compacto para tabelas grandes.
+- **partida dobrada** — Registro contábil em que todo valor sai de uma conta e entra em outra, mantendo o total fechado.
+- **percentil / mediana** — Valor abaixo do qual está certa fatia dos dados; a mediana é o do meio (50%).
+- **pgTAP** — Ferramenta para testar regras diretamente no banco PostgreSQL.
+- **PKCE** — Etapa extra de segurança no login via Google para o código não ser roubado no caminho.
+- **Playwright** — Ferramenta que controla um navegador por código para testar telas.
+- **PMT** — Fórmula da parcela fixa de um financiamento.
+- **Polars / PyArrow** — Bibliotecas Python para trabalhar com tabelas grandes.
+- **PostgreSQL (Postgres)** — Banco de dados relacional muito usado.
+- **Prometheus / Grafana** — Prometheus coleta números do sistema; Grafana os mostra em gráficos.
+- **pseudonimização** — Trocar um dado pessoal (e-mail) por um código que não o revela sem a chave.
+- **PWA** — Site que se comporta como aplicativo: instala no celular e pode funcionar offline.
+- **Pydantic** — Biblioteca Python que confere se os dados têm o formato esperado.
+- **pytest / unittest / Vitest / node:test** — Ferramentas que rodam testes automáticos (Python, Python, JavaScript, Node).
+- **Python** — Linguagem de programação de sintaxe simples, muito usada com dados.
+- **query parametrizada (consulta parametrizada)** — Consulta SQL em que os valores vão em campos separados (`?`), nunca colados no texto. Evita que um valor malicioso vire comando.
+- **React** — Biblioteca para montar telas a partir de componentes.
+- **record** — Em Java, classe curta para dados que não mudam depois de criados.
+- **Redis / Redis Streams** — Banco rápido em memória; Streams é o recurso de fila de mensagens dele.
+- **relay** — Processo que lê a outbox e publica as mensagens na fila.
+- **Render** — Serviço de hospedagem na internet.
+- **replay (ataque de repetição)** — Reenviar uma mensagem antiga e válida; combatido conferindo o horário.
+- **repositório** — Pasta de projeto sob controle do Git.
+- **retry (nova tentativa)** — Repetir uma chamada que falhou, geralmente com pausa crescente.
+- **RLS (Row Level Security)** — Regras no banco que definem quais linhas cada pessoa pode ler ou escrever.
+- **ROM hack** — Versão modificada de um jogo de videogame.
+- **rota** — Caminho de URL ligado a uma ação da API (`POST /api/rooms/{code}/players`).
+- **RPC** — Chamar uma função do servidor como se fosse local.
+- **semáforo** — Controle que deixa só N tarefas rodarem ao mesmo tempo. Como as vagas de um estacionamento.
+- **service worker** — Script do navegador que intercepta pedidos e guarda arquivos para o site funcionar offline.
+- **sinal (SIGINT/SIGTERM)** — Aviso do sistema operacional pedindo que o programa encerre.
+- **SKIP LOCKED** — Opção SQL que pula as linhas já travadas por outro, permitindo vários trabalhadores sem fila de espera.
+- **Spring Boot** — Framework Java para criar aplicações web.
+- **SQL** — Linguagem para consultar e alterar bancos de dados.
+- **SQLite** — Banco de dados que vive em um único arquivo.
+- **staging** — Primeira etapa de tabelas, com os dados quase crus, antes do modelo final.
+- **subprocesso** — Programa iniciado por outro programa, rodando separado.
+- **Supabase** — Serviço de banco PostgreSQL com login pronto.
+- **systemd** — Gerenciador de serviços do Linux; mantém um programa rodando como serviço.
+- **Tailwind** — Biblioteca de estilos para CSS.
+- **Testcontainers** — Biblioteca que sobe um banco descartável em contêiner durante o teste.
+- **ticker** — Relógio que dispara um evento em intervalos regulares.
+- **timeout** — Tempo máximo de espera; passado ele, a operação é cancelada.
+- **tipo união** — Tipo que aceita só alguns valores (como `'pt'` ou `'en'`).
+- **TLS (handshake)** — Conversa inicial que estabelece uma conexão segura.
+- **token** — Código que prova quem você é ou que representa uma permissão; em IA, também a unidade de texto cobrada.
+- **transação** — Grupo de operações no banco que ou acontecem todas ou nenhuma. Como uma transferência bancária.
+- **trigger** — Ação que o banco executa sozinho quando algo é gravado.
+- **TSV** — Como o CSV, mas separado por tabulação.
+- **TypeScript** — JavaScript com tipos, que ajudam a achar erros antes de rodar.
+- **uv / npm / yarn / pip / Maven** — Gerenciadores que baixam e instalam as bibliotecas do projeto (Python, Node, Node, Python, Java).
+- **variável** — Nome dado a um valor guardado na memória. Como uma etiqueta numa caixa.
+- **variável de ambiente** — Configuração passada ao programa de fora, sem estar escrita no código.
+- **Vite** — Ferramenta que prepara e serve o frontend durante o desenvolvimento.
+- **webhook** — Aviso que um sistema envia a outro por HTTP quando algo acontece. Como uma campainha.
+- **worker** — Processo que fica em segundo plano executando tarefas de uma fila.
+- **ZIP** — Arquivo que junta e comprime outros arquivos.
+- **Zod** — Biblioteca TypeScript que confere se os dados têm o formato esperado.

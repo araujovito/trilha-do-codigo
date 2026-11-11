@@ -1,0 +1,37 @@
+# Rascunhos dos agentes e relatórios de verificação: citam projetos que não são públicos.
+_brutos/
+VERIFICACAO.md
+VERIFICACAO_ENTREVISTA.md
+PROMPT_VERIFICADOR.md
+
+# Dados completos do jogo (inclui projetos não publicados). O repositório traz dados.js.
+jogo/dados.local.js
+
+# Do inventário, só entra o que é de projeto público (lista em jogo/projetos-publicos.json).
+inventario/*
+!inventario/GLOSSARIO.md
+!inventario/TRILHA-publica.md
+!inventario/projetos/
+!inventario/entrevista/
+inventario/projetos/*
+inventario/entrevista/*
+!inventario/projetos/atlas-cientifico.md
+!inventario/projetos/atribuicao-canais.md
+!inventario/projetos/contratinho.md
+!inventario/projetos/diario-glicemia.md
+!inventario/projetos/fundo-eleitoral-br.md
+!inventario/projetos/hub-integracoes.md
+!inventario/projetos/liquidacao-pix.md
+!inventario/projetos/mesa-de-credito.md
+!inventario/projetos/raio-x-patrimonial.md
+!inventario/projetos/thronfolge.md
+!inventario/entrevista/atlas-cientifico.md
+!inventario/entrevista/atribuicao-canais.md
+!inventario/entrevista/contratinho.md
+!inventario/entrevista/diario-glicemia.md
+!inventario/entrevista/fundo-eleitoral-br.md
+!inventario/entrevista/hub-integracoes.md
+!inventario/entrevista/liquidacao-pix.md
+!inventario/entrevista/mesa-de-credito.md
+!inventario/entrevista/raio-x-patrimonial.md
+!inventario/entrevista/thronfolge.md
