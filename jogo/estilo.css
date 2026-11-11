@@ -1,0 +1,104 @@
+/* Cores em variáveis: o tema escuro só troca os valores. */
+:root {
+  --fundo: #f6f4ef;
+  --painel: #ffffff;
+  --texto: #1d1d1f;
+  --suave: #55555c;
+  --borda: #cfcac0;
+  --destaque: #1f5fbf;
+  --destaque-texto: #ffffff;
+  --ok: #1b6e3a;
+  --ok-fundo: #e1f3e6;
+  --erro: #a3261c;
+  --erro-fundo: #fbe5e3;
+  --codigo-fundo: #20232a;
+  --codigo-texto: #e8e8ea;
+  --estrela: #b87b00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #14161a;
+    --painel: #1d2026;
+    --texto: #ececee;
+    --suave: #aeb0b8;
+    --borda: #3a3e48;
+    --destaque: #7fb0ff;
+    --destaque-texto: #0b1a33;
+    --ok: #7fd89a;
+    --ok-fundo: #1b3324;
+    --erro: #ff9b92;
+    --erro-fundo: #3a1f1d;
+    --codigo-fundo: #0d0f13;
+    --codigo-texto: #e8e8ea;
+    --estrela: #f0b84a;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  max-width: 46rem;
+  padding: 0 16px 48px;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 1rem/1.55 system-ui, sans-serif;
+  overflow-wrap: anywhere; /* evita rolagem horizontal da página */
+}
+h1 { font-size: 1.4rem; margin: 0; }
+h2 { font-size: 1.25rem; margin: 0.5rem 0; }
+.topo { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; padding: 16px 0 8px; }
+.topo nav { display: flex; flex-wrap: wrap; gap: 8px; }
+.resumo { color: var(--suave); margin: 0 0 12px; }
+
+button {
+  font: inherit;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: var(--painel);
+  color: var(--texto);
+  cursor: pointer;
+}
+button:hover:not(:disabled) { border-color: var(--destaque); }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+button.primario { background: var(--destaque); color: var(--destaque-texto); border-color: var(--destaque); font-weight: 600; }
+button.perigo { color: var(--erro); }
+:focus-visible { outline: 3px solid var(--destaque); outline-offset: 2px; }
+main:focus { outline: none; }
+
+.lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.parada { width: 100%; display: flex; gap: 12px; align-items: center; text-align: left; }
+.parada .num { flex: none; width: 2.2rem; height: 2.2rem; display: grid; place-items: center; border-radius: 50%; border: 2px solid var(--borda); font-weight: 700; }
+.parada .info { flex: 1; min-width: 0; }
+.parada .sub { display: block; color: var(--suave); font-size: 0.875rem; }
+.parada.concluida .num { border-color: var(--ok); color: var(--ok); }
+.parada.livre { border-color: var(--destaque); }
+.estrelas { color: var(--estrela); white-space: nowrap; }
+
+.painel { background: var(--painel); border: 1px solid var(--borda); border-radius: 10px; padding: 14px 16px; margin: 12px 0; }
+.etapa { color: var(--suave); font-size: 0.875rem; margin: 0; }
+.origem { font-family: ui-monospace, monospace; font-size: 0.875rem; color: var(--suave); }
+code { font-family: ui-monospace, monospace; background: var(--fundo); border: 1px solid var(--borda); border-radius: 4px; padding: 0 4px; font-size: 0.92em; }
+pre { margin: 8px 0; padding: 12px; background: var(--codigo-fundo); color: var(--codigo-texto); border-radius: 8px; overflow: auto; max-width: 100%; font-size: 0.85rem; line-height: 1.45; tab-size: 4; }
+pre code { background: none; border: 0; padding: 0; color: inherit; }
+
+.opcoes { display: grid; gap: 8px; margin: 12px 0; }
+.opcao { text-align: left; width: 100%; }
+.opcao.certa { background: var(--ok-fundo); border-color: var(--ok); color: var(--ok); }
+.opcao.errada { background: var(--erro-fundo); border-color: var(--erro); color: var(--erro); }
+.retorno { padding: 10px 12px; border-radius: 8px; margin: 8px 0; }
+.retorno.ok { background: var(--ok-fundo); color: var(--ok); }
+.retorno.erro { background: var(--erro-fundo); color: var(--erro); }
+.acoes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.barra { height: 10px; border-radius: 5px; background: var(--borda); overflow: hidden; }
+.barra > span { display: block; height: 100%; background: var(--ok); }
+
+/* Balão do entrevistador e aviso de projeto de trabalho */
+.balao { background: var(--fundo); border: 1px solid var(--borda); border-left: 4px solid var(--destaque); border-radius: 10px; padding: 8px 14px; margin: 8px 0; }
+.balao p { margin: 4px 0; }
+.balao .quem { color: var(--suave); font-size: 0.8rem; font-weight: 600; }
+.aviso { background: var(--erro-fundo); color: var(--erro); border-radius: 8px; padding: 10px 12px; font-weight: 600; }
+h3 { font-size: 1.05rem; margin: 14px 0 4px; }
+details { margin: 8px 0; }
+summary { cursor: pointer; font-weight: 600; }

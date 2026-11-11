@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trilha do Código</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Trilha do Código</h1>
+    <nav aria-label="Seções">
+      <button type="button" id="btn-mapa">Mapa</button>
+      <button type="button" id="btn-entrevista">Modo entrevista</button>
+      <button type="button" id="btn-projetos">Seus projetos</button>
+      <button type="button" id="btn-recomecar" class="perigo">Recomeçar</button>
+    </nav>
+  </header>
+  <p id="resumo" class="resumo" aria-live="polite"></p>
+  <!-- O jogo desenha tudo dentro desta área -->
+  <main id="tela" tabindex="-1"></main>
+
+  <script src="dados.js"></script>
+  <!-- Opcional: dados completos da máquina do autor. Se o arquivo não existir, o jogo usa dados.js. -->
+  <script src="dados.local.js"></script>
+  <script src="jogo.js"></script>
+</body>
+</html>
