@@ -392,9 +392,11 @@ document.getElementById('btn-recomecar').addEventListener('click', () => {
     auto = {};
     salvar();
     salvarAuto();
-    telaMapa();
+    if (window.apagarAulas) window.apagarAulas(); // aulas.js, se existir
+    if (window.telaAulas) window.telaAulas(); else telaMapa();
   }
 });
 carregar();
 carregarAuto();
-telaMapa();
+// Com lições, aulas.js abre a tela "Aulas"; sem lições, a tela inicial continua sendo o mapa.
+if (!window.LICOES || !(window.LICOES.temas || []).length) telaMapa();

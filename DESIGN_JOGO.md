@@ -18,6 +18,10 @@ Jogo original para treinar o Vitor para entrevistas de emprego: o código real d
 - O apêndice "Depois" aparece bloqueado até as 29 paradas estarem concluídas.
 - O progresso fica no `localStorage` do navegador; se ele falhar, o jogo funciona, só não lembra. "Recomeçar" apaga tudo, com confirmação.
 
+## Tela "Aulas"
+
+Primeiro botão do topo e tela inicial quando há lições (`conteudo/temas`, geradas em `jogo/licoes.js`). Lista as lições por tema, com estado bloqueada, livre ou concluída (estrelas), e um painel "Revisão de hoje: N". Cada lição tem 5 passos: Entender, Ver, Ler, Explicar e Entrevista. No passo Ler, um exercício por vez, na voz do chefe, com código de linhas numeradas e alternativas embaralhadas. Quem acerta vê o porquê e a aula e segue. Quem erra vê por que a opção atraía, o que faltava saber, a aula e a certa, e recebe outro exercício da lição; "Não sei, me explica" mostra a aula e a certa sem marcar erro. Para sair do passo 3 é preciso acertar. Errar ou pedir explicação coloca a lição na fila de revisão (1, 3 e 7 dias; na revisão cai um exercício sorteado da lição, acertar sobe a etapa e errar volta ao dia seguinte). Estrelas: 3 pelo primeiro exercício visto, 2 pelo segundo, 1 depois. O estado fica em `trilha-do-codigo-aulas-v1`, separado das outras chaves. O resto deste documento descreve o quiz do Mapa, que continua valendo.
+
 ## Tela "Modo entrevista"
 
 Botão no topo. O jogador escolhe um dos 19 projetos, lê o pitch de 30 segundos e percorre as decisões uma a uma: vê a pergunta, responde em voz alta, clica em "Revelar resposta" (resposta, fonte e custo admitido) e se avalia em "Sei explicar / Mais ou menos / Não sei". A autoavaliação fica no `localStorage` (chave própria, separada das estrelas). Ao final: contagem, lista dos "Não sei", "Sem motivo registrado — prepare sua resposta" e "Perguntas difíceis". Projetos de trabalho mostram, no topo, o aviso de não citar clientes, valores ou dados internos.

@@ -102,3 +102,12 @@ pre code { background: none; border: 0; padding: 0; color: inherit; }
 h3 { font-size: 1.05rem; margin: 14px 0 4px; }
 details { margin: 8px 0; }
 summary { cursor: pointer; font-weight: 600; }
+
+/* Aulas: código com linhas numeradas, aviso informativo, campo de resposta e pontos */
+.linha { display: block; }
+.linha .n { display: inline-block; width: 2.2em; margin-right: 0.6em; text-align: right; color: var(--suave); user-select: none; }
+.retorno.info { background: var(--fundo); border: 1px solid var(--borda); color: var(--texto); }
+.rotulo { display: block; font-weight: 600; margin: 10px 0 4px; }
+textarea { width: 100%; font: inherit; padding: 8px 10px; border: 1px solid var(--borda); border-radius: 8px; background: var(--fundo); color: var(--texto); resize: vertical; }
+.ponto { display: flex; gap: 6px; align-items: flex-start; min-height: 44px; padding: 6px 0; }
+.ponto input { flex: none; width: 1.4rem; height: 1.4rem; margin-top: 2px; }
